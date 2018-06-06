@@ -233,14 +233,189 @@ a {
     100%{transform: translateY(5px);}
 }
 
-.item {
+.slider {
+    padding: 0;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
 
-    width: auto;
-    overflow: hidden;
+.slider a {
+    flex: 1 0 auto;
+    width: 25%;
+    min-width: 100px;
 }
 
 
-.item img {
-  
+.slider a div {
+    height: 400px;
+    transition: filter 500ms ease;
+    filter: saturate(0%);
+}
+
+.slider h3,
+.slider p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Montserrat;
+    text-align: center;
+    position: relative;
+    top: 65%;
+}
+
+.slider h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.slider p {
+    font-family: Georgia;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+
+
+.slider a:last-child div {
+    margin-left: 0px;
+}
+
+.slider div:hover {
+    filter: saturate(120%) brightness(120%);
+
+}
+
+#img1 {
+    background-image: url('../img/janko-ferlic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#img2 {
+    background-image: url('../img/robin-vet.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img3 {
+    background-image: url('../img/clem-onojeghuo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img4 {
+    background-image: url('../img/dan-gold.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+footer div .credits {
+    display: flex;
+    color: rgba(21, 21, 21, 0.9);
+    justify-content: space-between;
+    margin-bottom: 5%;
+
+}
+
+
+.credits li,
+.credits li a {
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 2em;
+    color: rgba(21, 21, 21, 0.9);
+    list-style: none;
+}
+
+.credits .font-menu {
+    text-transform: uppercase;
+    font-family: Arial, Roboto;
+    font-weight: 900;
+    letter-spacing: 0px !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #151515;
+    margin-bottom: 20px;
+    height: 30px;
+
+
+}
+
+.footer-column {
+    padding-left: 8%;
+    width: 200px;
+}
+
+.footer-column:last-child {
+    width: 400px;
+    padding-right: 8%;
+}
+
+.copyright {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(21, 21, 21, 1);
+    color: #fff;
+    font-size: 1rem;
+    font-family: Georgia;
+}
+
+
+@media (max-width: 960px) {
+
+    .slider a {
+        width: 50%;
+    }
+    footer div .credits {
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .footer-column {
+        padding-left: 10%;
+        width: 20%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-column:last-child {
+        width: 100%;
+        padding:0 10%;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .footer-column {
+        padding: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider a {
+        width: 100%;
+    }
 
 }
