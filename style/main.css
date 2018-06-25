@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Edwardian Script ITC";
+    src: url("../fonts/ITCEDSCR.TTF");
+}
+
+font-face {
+    font-family: "Castellar";
+    src: url("../fonts/CASTELAR.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -74,7 +84,7 @@ a {
     margin: 1% 5%;
     min-width: 80px;
     text-decoration: none;
-    font-family: 'Castellar';
+    font-family: 'Castellar', serif;
     font-weight: 100;
     font-size: 1.0em;
     background-color: rgba(160, 44, 27, 1);
@@ -138,13 +148,13 @@ a {
     width: 100%;
     text-align: center;
     z-index: 10;
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', Castellar,  serif;
     letter-spacing: 1px;
 }
 .bottom .content-body {
     width: 100%;
     text-align: center;
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC',Castellar, serif;
     z-index: 9;
     letter-spacing: 1px;
 }
@@ -164,7 +174,7 @@ a {
     border-radius: 10px;
     display: inline;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
-    font-family: 'Castellar';
+    font-family: 'Castellar', serif;
 }
 .bottem {
     z-index: 1;
